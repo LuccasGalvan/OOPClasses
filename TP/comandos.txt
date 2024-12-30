@@ -1,0 +1,6 @@
+/config ../mapa.txt
+/init
+/comprac c S
+/prox 20
+/auto 1
+/stop 1

@@ -55,6 +55,18 @@ build CMakeFiles/TP.dir/main.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users
   OBJECT_DIR = CMakeFiles\TP.dir
   OBJECT_FILE_DIR = CMakeFiles\TP.dir
 
+build CMakeFiles/TP.dir/GameData.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users/Luccas/Desktop/stuff/faculdade/2$ ano/1$ semestre/POO/REDO/Pratica/TP/GameData.cpp || cmake_object_order_depends_target_TP
+  DEP_FILE = CMakeFiles\TP.dir\GameData.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TP.dir
+  OBJECT_FILE_DIR = CMakeFiles\TP.dir
+
+build CMakeFiles/TP.dir/Player.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users/Luccas/Desktop/stuff/faculdade/2$ ano/1$ semestre/POO/REDO/Pratica/TP/Player.cpp || cmake_object_order_depends_target_TP
+  DEP_FILE = CMakeFiles\TP.dir\Player.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TP.dir
+  OBJECT_FILE_DIR = CMakeFiles\TP.dir
+
 build CMakeFiles/TP.dir/Caravana.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users/Luccas/Desktop/stuff/faculdade/2$ ano/1$ semestre/POO/REDO/Pratica/TP/Caravana.cpp || cmake_object_order_depends_target_TP
   DEP_FILE = CMakeFiles\TP.dir\Caravana.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -79,20 +91,8 @@ build CMakeFiles/TP.dir/Cidade.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Use
   OBJECT_DIR = CMakeFiles\TP.dir
   OBJECT_FILE_DIR = CMakeFiles\TP.dir
 
-build CMakeFiles/TP.dir/Mercadoria.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users/Luccas/Desktop/stuff/faculdade/2$ ano/1$ semestre/POO/REDO/Pratica/TP/Mercadoria.cpp || cmake_object_order_depends_target_TP
-  DEP_FILE = CMakeFiles\TP.dir\Mercadoria.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TP.dir
-  OBJECT_FILE_DIR = CMakeFiles\TP.dir
-
-build CMakeFiles/TP.dir/Tempestade.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users/Luccas/Desktop/stuff/faculdade/2$ ano/1$ semestre/POO/REDO/Pratica/TP/Tempestade.cpp || cmake_object_order_depends_target_TP
-  DEP_FILE = CMakeFiles\TP.dir\Tempestade.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TP.dir
-  OBJECT_FILE_DIR = CMakeFiles\TP.dir
-
-build CMakeFiles/TP.dir/configs.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users/Luccas/Desktop/stuff/faculdade/2$ ano/1$ semestre/POO/REDO/Pratica/TP/configs.cpp || cmake_object_order_depends_target_TP
-  DEP_FILE = CMakeFiles\TP.dir\configs.cpp.obj.d
+build CMakeFiles/TP.dir/mapManager.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Users/Luccas/Desktop/stuff/faculdade/2$ ano/1$ semestre/POO/REDO/Pratica/TP/mapManager.cpp || cmake_object_order_depends_target_TP
+  DEP_FILE = CMakeFiles\TP.dir\mapManager.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\TP.dir
   OBJECT_FILE_DIR = CMakeFiles\TP.dir
@@ -105,7 +105,7 @@ build CMakeFiles/TP.dir/configs.cpp.obj: CXX_COMPILER__TP_unscanned_Debug C$:/Us
 #############################################
 # Link the executable TP.exe
 
-build TP.exe: CXX_EXECUTABLE_LINKER__TP_Debug CMakeFiles/TP.dir/main.cpp.obj CMakeFiles/TP.dir/Caravana.cpp.obj CMakeFiles/TP.dir/Item.cpp.obj CMakeFiles/TP.dir/Buffer.cpp.obj CMakeFiles/TP.dir/Cidade.cpp.obj CMakeFiles/TP.dir/Mercadoria.cpp.obj CMakeFiles/TP.dir/Tempestade.cpp.obj CMakeFiles/TP.dir/configs.cpp.obj
+build TP.exe: CXX_EXECUTABLE_LINKER__TP_Debug CMakeFiles/TP.dir/main.cpp.obj CMakeFiles/TP.dir/GameData.cpp.obj CMakeFiles/TP.dir/Player.cpp.obj CMakeFiles/TP.dir/Caravana.cpp.obj CMakeFiles/TP.dir/Item.cpp.obj CMakeFiles/TP.dir/Buffer.cpp.obj CMakeFiles/TP.dir/Cidade.cpp.obj CMakeFiles/TP.dir/mapManager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TP.dir

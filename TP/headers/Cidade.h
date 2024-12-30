@@ -9,32 +9,40 @@
 #include <vector>
 #include "Caravana.h"
 
-
-//TODO: achar um jeito de fazer com que o numero de mercadorias e tripulantes possa ser alterado em runtime
+//para impedir os erros de dependencias circulares
+class Caravana;
+class Player;
+class Buffer;
+enum class TipoCaravana;
 
 class Cidade {
-    char nome; // Nome único da cidade
-    int posX, posY; // Posição no mapa
-    std::vector<Caravana*> caravanas; // Caravanas presentes na cidade
-    int mercadoriasDisponiveis; // Quantidade de mercadorias disponíveis para compra
-    int tripulantesDisponiveis; // Número de tripulantes disponíveis para contratação
+    char nome;
+    int posX, posY;
+    std::vector<std::shared_ptr<Caravana>> caravanas;
+    std::vector<std::shared_ptr<Caravana>> caravanasDisponiveis;
+    int mercadoriasDisponiveis;
+    int tripulantesDisponiveis;
+    int precoCompra;
+    int precoVenda;
+    int precoCaravana;
 
 public:
-    Cidade(char nome, int x, int y, int mercadoriasDisponiveis, int tripulantesDisponiveis);
+    Cidade(char nome, int x, int y, int mercadoriasDisponiveis, int tripulantesDisponiveis, int precoCompra, int precoVenda, int precoCaravana);
 
-    // Getters
     [[nodiscard]] char getNome() const;
     [[nodiscard]] int getPosX() const;
     [[nodiscard]] int getPosY() const;
+    [[nodiscard]] int getMercadoriasDisponiveis() const;
+    [[nodiscard]] int getTripulantesDisponiveis() const;
 
-
-    // Ações
-    bool aceitaCaravana(Caravana* caravana);
+    bool aceitaCaravana(const std::shared_ptr<Caravana>& caravana, Buffer &buffer);
+    bool sairCaravana(const std::shared_ptr<Caravana>& caravana, Buffer &buffer);
     void listarCaravanas() const;
-    int comprarMercadoria(int quantidade, int& moedas);
-    int contratarTripulantes(int quantidade, int& moedas);
+    int comprarMercadoria(int quantidade);
+    void venderMercadoria(Caravana* caravana) const;
+    int contratarTripulantes(int quantidade);
+    std::shared_ptr<Caravana> comprarCaravana(TipoCaravana tipo, Buffer &buffer);
 
-    // Exibição
     void exibir() const;
 };
 

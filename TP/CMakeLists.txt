@@ -4,6 +4,10 @@ project(TP)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(TP main.cpp
+        GameData.cpp
+        headers/GameData.h
+        Player.cpp
+        headers/Player.h
         Caravana.cpp
         headers/Caravana.h
         Item.cpp
@@ -12,11 +16,6 @@ add_executable(TP main.cpp
         headers/Buffer.h
         Cidade.cpp
         headers/Cidade.h
-        Mercadoria.cpp
-        headers/Mercadoria.h
-        Tempestade.cpp
-        headers/Tempestade.h
-        configs.cpp
-        headers/configs.h
-        headers/structs.h
+        mapManager.cpp
+        headers/mapManager.h
 )
